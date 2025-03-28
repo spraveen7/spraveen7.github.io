@@ -3,67 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Praveen Bhamidipati - Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
-        h1, h2 { color: #2c3e50; }
-        a { text-decoration: none; color: #3498db; }
-        .category { margin-top: 30px; }
-        .project-list { list-style-type: none; padding: 0; }
-        .project-list li { margin: 10px 0; }
-        footer { margin-top: 50px; color: #7f8c8d; }
-        .social-icons a { margin: 0 10px; }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add font-awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/spraveen7/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/spraveen7" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
         <h1>Hello, I am Sai Praveen Bhamidipati</h1>
-        <p>Welcome to my portfolio. Below are some of my projects organized by category:</p>
-        
-        <!-- Machine Learning Projects -->
-        <div class="category">
-            <h2>Machine Learning Projects</h2>
-            <ul class="project-list">
-                <li><a href="https://github.com/spraveen7/project1">Project 1: ML Model for XYZ</a></li>
-                <li><a href="https://github.com/spraveen7/project2">Project 2: ML for Data Prediction</a></li>
-            </ul>
-        </div>
+        <p>Welcome to my portfolio! I am a machine learning enthusiast and developer.</p>
+        <p>Feel free to explore my projects below.</p>
+    </section>
 
-        <!-- Deep Learning Projects -->
-        <div class="category">
-            <h2>Deep Learning Projects</h2>
-            <ul class="project-list">
-                <li><a href="https://github.com/spraveen7/project3">Project 3: Neural Network Model</a></li>
-                <li><a href="https://github.com/spraveen7/project4">Project 4: CNN for Image Classification</a></li>
-            </ul>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Llama Fine-Tuning</h3>
+            <p>Fine-tuned a Llama model for SQL query generation.</p>
+            <a href="https://github.com/spraveen7/llama-finetuning" target="_blank">View Project</a>
         </div>
-
-        <!-- NLP Projects -->
-        <div class="category">
-            <h2>NLP Projects</h2>
-            <ul class="project-list">
-                <li><a href="https://github.com/spraveen7/project5">Project 5: Sentiment Analysis with LSTM</a></li>
-                <li><a href="https://github.com/spraveen7/project6">Project 6: Text Summarization using Transformer</a></li>
-            </ul>
+        <div class="project-card">
+            <h3>Project 2: NLP Model</h3>
+            <p>Built an NLP model for text classification and sentiment analysis.</p>
+            <a href="https://github.com/spraveen7/project2" target="_blank">View Project</a>
         </div>
+    </section>
 
-        <!-- Computer Vision Projects -->
-        <div class="category">
-            <h2>Computer Vision Projects</h2>
-            <ul class="project-list">
-                <li><a href="https://github.com/spraveen7/project7">Project 7: Object Detection with YOLO</a></li>
-                <li><a href="https://github.com/spraveen7/project8">Project 8: Image Segmentation with U-Net</a></li>
-            </ul>
-        </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <a href="mailto:bmaruthi.praveen@gmail.com">Email me</a>
+    </section>
 
-        <footer>
-            <p>Contact: bmaruthi.praveen@gmail.com</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/spraveen7/">LinkedIn</a> | 
-                <a href="https://github.com/spraveen7">GitHub</a>
-            </div>
-        </footer>
-    </div>
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/spraveen7/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/spraveen7" target="_blank">GitHub</a>
+    </footer>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            list-style-type: none;
+        }
+
+        .social-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .social-links li a {
+            color: white;
+            font-size: 20px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        section#about {
+            background-color: #ecf0f1;
+        }
+
+        section#projects {
+            background-color: #ffffff;
+        }
+
+        .project-card {
+            background-color: #e74c3c;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 300px;
+            text-align: left;
+        }
+
+        .project-card h3 {
+            color: #fff;
+        }
+
+        .project-card a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        section#contact {
+            background-color: #ecf0f1;
+        }
+
+        footer {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </body>
 </html>
