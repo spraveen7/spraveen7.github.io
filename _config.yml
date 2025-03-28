@@ -1,1 +1,33 @@
+# Site settings
+title: "Sai Praveen Bhamidipati"
+description: "Machine Learning Engineer | AI Enthusiast"
+baseurl: ""
+url: "https://spraveen7.github.io"
 theme: jekyll-theme-cayman
+
+# Navigation
+menu:
+  - name: "Home"
+    url: "/"
+  - name: "Projects"
+    url: "/projects"
+  - name: "Contact"
+    url: "/contact"
+
+# Social Links
+social:
+  - name: "LinkedIn"
+    url: "https://www.linkedin.com/in/spraveen7/"
+    icon: "linkedin"
+  - name: "GitHub"
+    url: "https://github.com/spraveen7"
+    icon: "github"
+  
+# Google Analytics (optional)
+# google_analytics: UA-XXXXXXXX-X
+
+# Exclude files and folders (if any)
+exclude:
+  - "README.md"
+  - "LICENSE"
+
